@@ -7,10 +7,24 @@
     text-align: center;
    
   }
-  #time
+
+
+  @media(min-width:880px)
+  {
+    #time
   {
     font-size: 10rem;
   }
+
+  }
+  @media(max-width:976px)
+  {
+    #time
+    {
+      font-size:2rem
+    }
+  }
+  
  
   .big-box
   {

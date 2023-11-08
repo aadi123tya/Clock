@@ -5,11 +5,51 @@
     border: 2px solid black;
     border-color: #D5FFD0;
 }
+@media(max-width:342px)
+{
+    h1{
+        font-size: 1.5rem;
+    }
+    
+}
 
-#heading , #timer
+@media(min-width:340px) 
+{
+    #timer
+    {
+        font-size: 1rem;
+    }
+   
+}
+@media(max-width:231px)
+{
+    #button
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        margin-left: 1.6rem;
+        margin-top: 2rem;
+    }
+
+    #timer
+    {
+        font-size: 1.5rem;
+        margin-left: 1.3rem;
+    }
+    #heading
+    {
+        text-align: center; 
+    }
+
+}
+@media(min-width:231px)
+{
+    #heading , #timer
 {
     text-align: center;
     font-size: 3rem;
+}
 }
 
 
@@ -20,12 +60,15 @@ button
     
 }
 
-#button
+@media(min-width:231px)
+{
+    #button
 {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+}
 }
 
 body

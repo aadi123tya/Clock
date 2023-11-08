@@ -15,10 +15,40 @@ body
    font-size: 2rem;
    border: 2px solid wheat;
 }
-#heading
+
+@media(min-width:679px) 
 {
-    text-align: center;
-    font-size: 10rem;
+
+    #heading
+    {
+        text-align: center;
+        font-size: 10rem;
+    }
+    input
+    {
+       height:2rem;
+       /* width: 1.6rem; */
+       
+    }
+
+}
+@media(max-width:680px)
+{
+    #heading
+    {
+        text-align: center;
+        font-size: 5rem;
+    }
+    input
+    {
+       height:2rem;
+       width: 5rem;
+       
+    }
+    .hours,.minutes,.seconds
+    {
+        font-size: 0.9rem;
+    }
 }
 
 button{
@@ -32,8 +62,6 @@ button{
     margin-top: 2rem;
     font-size: 2rem;
 
-
-    
 }
 #button
 {
@@ -41,11 +69,7 @@ button{
     justify-content: center;
     gap: 2rem;
 }
-input
-{
-   height:2rem
-   
-}
+
 .showTime
 {
     text-align: center;

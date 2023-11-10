@@ -9,6 +9,13 @@ let hours = 0;
 let minutes = 0;
 let seconds = 0;
 let milliseconds = 0;
+ reset.addEventListener('click',function(){
+  location.reload();
+  timer.innerHTML = `00:00:00:00`;
+  console.log('reset clicked')
+},false)
+
+
 submit.addEventListener(
   "click",
   function () {
@@ -52,7 +59,4 @@ stop.addEventListener(
   false
 );
 
-reset.addEventListener('click',function(){
-    timer.innerHTML = `00:00:00:00`;
-    console.log('reset clicked')
-},false)
+
